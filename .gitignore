@@ -72,3 +72,4 @@ node_modules/
 WholePage.code-workspace
 .firebaserc
 firebase.json
+.github/

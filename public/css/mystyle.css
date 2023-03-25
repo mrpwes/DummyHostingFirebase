@@ -25,16 +25,6 @@ p {
     text-indent: 2%;
 }
 
-#button {
-    position: absolute;
-}
-
-#bullet {
-    margin: 0%;
-    padding-left: 6%;
-    font-size: 30px;
-}
-
 .topnav a {
     float: left;
     color: #f2f2f2;
@@ -54,26 +44,37 @@ p {
     color: white;
 }
 
-#center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.center {
+    position: absolute;
+    top: 20%;
+    width: 99%;
     text-align: center;
-    width: 50%;
 }
 
-#intro {
-    position: absolute;
-    left: 0;
-    top: 20%;
-    width: 100%;
-    text-align: center;
+#mainImage {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 23%;
+    width: 20%;
 }
 
 #icons {
-    padding: 5px 30px 0px 30px;
+    margin: 5px 30px 0px 30px;
     width: 48px;
     height: 48px;
+}
+
+#aboutMeIcons {
+    padding: 5px 30px 0px 30px;
+    width: auto;
+    height: 200px;
+}
+
+#bullet {
+    margin: 0%;
+    padding-left: 6%;
+    font-size: 30px;
 }
 
 #floatLeft {
@@ -86,8 +87,45 @@ p {
     margin: 0 0 0 15px;
 }
 
-#aboutMeIcons {
-    padding: 5px 30px 0px 30px;
-    width: auto;
-    height: 200px;
+.horizontalImage {
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+div.horizontalImage>a:link,
+div.horizontalImage>a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+div.horizontalImage>a:hover,
+div.horizontalImage>a:active {
+    background-color: rgb(221, 45, 45);
+    color: white;
+}
+
+
+
+div.horizontalImage>a:link,
+div.horizontalImage>a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+div.horizontalImage>a:hover,
+div.horizontalImage>a:active {
+    background-color: rgb(221, 45, 45);
+    color: white;
 }

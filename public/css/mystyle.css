@@ -1,5 +1,5 @@
 body {
-    background-color: #319197;
+    background-image: url('./svg/bg.svg');
     color: #FCF3CF;
 }
 
@@ -26,6 +26,8 @@ p {
 }
 
 .topnav a {
+    font-family: "Helvetica";
+    font-weight: bold;
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -79,12 +81,13 @@ p {
 
 #floatLeft {
     float: left;
-    padding: 10px 10px 10px 10px;
+    padding: 1%;
 }
 
 #floatRight {
     float: right;
     margin: 0 0 0 15px;
+    padding: 1%;
 }
 
 .horizontalImage {
@@ -117,7 +120,7 @@ div.horizontalImage>a:link,
 div.horizontalImage>a:visited {
     background-color: white;
     color: black;
-    border: 2px solid green;
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -126,6 +129,14 @@ div.horizontalImage>a:visited {
 
 div.horizontalImage>a:hover,
 div.horizontalImage>a:active {
-    background-color: rgb(221, 45, 45);
-    color: white;
+    border-radius: 20%;
+    color: rgb(0, 0, 0);
+}
+
+
+#button {
+    padding-bottom: .3%;
+    float: left;
+    width: 60px;
+    height: auto;
 }

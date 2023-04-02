@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="../css/mystyle.css">
 </head>
 
+<style>
+
+</style>
 <script>
-    function Hover(value) {
+    function mouseEnter(value) {
         var element = document.getElementById("valueFunction");
         element.innerHTML = value;
+    }
+
+    function mouseLeave() {
+        var element = document.getElementById("valueFunction");
+        element.innerHTML = "Hover Image To See More Details";
     }
 </script>
 
@@ -24,32 +32,41 @@
         <a href="./PhotoGallery.html">PHOTO GALLERY</a>
         <a href="./MyBeat.html">MY BEAT</a>
         <a href="./MyKindOfFilm.html">MY KIND OF FILM</a>
-        <a class="active">BEAUTIFUL PLACE</a>
+        <a class="active">DREAM PLACE</a>
     </div>
-    <img src="../images/places/fiveplace.png" usemap="#image-map" style="display:block; margin-left: auto;
-    margin-right: auto; padding-top: 70px;">
 
+    <h1><br>Dream Place</h1>
+    <img src="../images/places/fiveplace.png" usemap="#image-map" style="display:block; margin-left: auto;
+    margin-right: auto;">
     <map name="image-map">
-        <area target="" alt="" title="" href="" coords="304,24,21,450" shape="rect" onmouseover='Hover("test")'>
-        <area target="" alt="" title="" href=""
-            coords="450,454,467,463,492,464,509,457,529,444,543,433,552,414,560,395,567,375,580,322,586,267,590,186,579,139,563,71,540,39,508,25,483,25,447,36,426,55,406,84,394,105,387,132,378,178,378,225,385,287,396,362,419,414,431,433"
-            shape="poly" onmouseover='Hover("test 2")'>
-        <area target="" alt="" title="" href="" coords="681,421,940,32" shape="rect" onmouseover='Hover("test 3")'>
-        <area target="" alt="" title="" href="" coords="995,344,1275,346,1275,123,1261,89,1238,73,1216,64,993,66"
-            shape="poly" onmouseover='Hover("test 4")'>
-        <area target="" alt="" title="" href="" coords="1329,439,1586,32" shape="rect" onmouseover='Hover("test 5")'>
+        <area coords="22,506,344,23" shape="rect"
+            onmouseover='mouseEnter("Adventure: The trek to the summit of Reinebringen is difficult yet rewarding, making it an excellent adventure for individuals who appreciate outdoor activities and a physical challenge. \<br> \<br>Reinebringen is recognized for its breathtaking natural beauty, and the Lofoten Islands are no exception. The trek takes you through challenging terrain, lush forests, and rocky outcroppings, all while being surrounded by the natural splendor of Norway.")'
+            onmouseleave='mouseLeave()'>
+        <area
+            coords="483,487,509,518,554,523,594,509,617,478,643,425,661,295,657,228,657,174,648,112,626,63,590,36,559,27,523,36,496,49,465,67,447,103,429,170,424,241,438,353,447,420"
+            shape="poly"
+            onmouseover='mouseEnter("The Azores are a sanctuary for adventure seekers, with sports such as surfing, diving, kayaking, and canyoning available. You may also go paragliding, explore underground lava tubes, or take a thrilling helicopter tour over the islands.\<br>\<br>Relaxation: With natural hot springs, spa treatments, and magnificent beaches where you can soak up the sun and enjoy the calm island ambiance, the Azores are a perfect spot to unwind and rest.")'
+            onmouseleave='mouseLeave()'>
+        <area coords="764,469,1059,36" shape="rect"
+            onmouseover='mouseEnter("The Na Pali Coast has appeared in numerous films and television series, including Jurassic Park, Pirates of the Caribbean, and Lost. If you enjoy these shows, visiting the Na Pali Coast is a terrific chance to see the beauty and drama of these sites in person. \<br> \<br>The Na Pali Coast is noted for its breathtaking natural beauty, which includes towering sea cliffs, green valleys, and beautiful beaches. The landscape is especially lovely at sunrise and sunset, when the cliffs and valleys are illuminated by golden light.")'
+            onmouseleave='mouseLeave()'>
+        <area coords="1117,385,1434,72" shape="rect"
+            onmouseover='mouseEnter("Iceland is famous for its magnificent natural beauty, which includes glaciers, waterfalls, hot springs, and volcanoes. The country&apos;s distinct geology and topography make it a haven for nature aficionados and outdoor enthusiasts. \<br>\<br>Hiking, skiing, snowboarding, ice climbing, whale viewing, and other outdoor activities are available in Iceland. Iceland has something for everyone, whether you&apos;re an adrenaline addict or just seeking for a little adventure.")'
+            onmouseleave='mouseLeave()'>
+        <area coords="1488,496,1792,36" shape="rect"
+            onmouseover='mouseEnter("Salar de Uyuni is one of the best spots in the world for stargazing due to its remote position and high altitude. In the clear night sky, you can see a spectacular display of stars, planets, and other celestial objects.\<br>\<br>The area surrounding Salar de Uyuni is home to indigenous populations that have lived there for thousands of years. Visit local communities and cultural events to learn about their customs and way of life.")'
+            onmouseleave='mouseLeave()'>
     </map>
 
-
-    <div style="text-align: center;">
-        <p id="valueFunction">
-            TESTING
+    <div style="position: absolute; margin-left: auto; margin-right: auto; width: 99%;">
+        <p id="valueFunction" style="text-align: center;">
+            Hover Image To See Details
         </p>
     </div>
 
-
+    <p style="line-height: 6;">&nbsp;</p>
     <a href="../index.html">
-        <img id="button" src="../images/icons/goBack.png" alt="Previous Page Button" title="Go To Top">
+        <img id="button" src="../images/icons/backToLanding.png" alt="Previous Page Button" title="Go To Top">
     </a>
 </body>
 
